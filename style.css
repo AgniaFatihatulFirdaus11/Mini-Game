@@ -1,0 +1,85 @@
+:root {
+    box-sizing: border-box;
+}
+
+html, body, * {
+    margin: 0;
+    padding: 0;
+    
+}
+
+nav {
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+    width: 100%;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+nav a:hover {
+    background-color: rgb(199, 153, 94);
+    cursor: pointer;
+    transition: background-color .5s ease-in-out;
+}
+
+.dark {
+    background-color: black;
+    color: white;
+}
+
+
+
+
+#app {
+    height: 100vh;
+}
+
+.sumary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border: 5px solid blanchedalmond;
+    width: 400px;
+    height: 400px;
+    text-align: center;
+}
+
+.games {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: orange;
+    
+}
+
+.option {
+    width: 30%;
+    margin: 10px 15px;
+    padding: 25px;
+    background-color: bisque;
+    font-size: 40px;
+}
+
+.option:hover {
+    cursor: pointer;
+    background-color: burlywood;
+    transition: cubic-bezier(0.215, 0.610, 0.355, 1) ease-in-out;
+    transform: scale(110%);
+    -webkit-transform: scale(110%);
+    -moz-transform: scale(110%);
+    -ms-transform: sclae(110%);
+    -o-transform: scale(110%);
+    -webkit-transition: cubic-bezier(0.215, 0.610, 0.355, 1) ease-in-out;
+    -moz-transition: cubic-bezier(0.215, 0.610, 0.355, 1) ease-in-out;
+    -ms-transition: cubic-bezier(0.215, 0.610, 0.355, 1) ease-in-out;
+    -o-transition: cubic-bezier(0.215, 0.610, 0.355, 1) ease-in-out;
+}
