@@ -4,28 +4,27 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CUYPY</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Game tebak Gambar</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="app">
-        <div class="sumary">
-            <h1 class="title">CUYPY GAMES</h1>
-            <br />
-            <h1 id="inGame">[_] [_] [_] [_]</h1>
-            <h1 id="inGame"> 1   2   3   4</h1>
-            <h3 id="result"></h3>
-            <nav>
-                <a href="home.html" id="home">HOME</a>
-                <a onclick= "darkMode()" id="mode">MODE</a>
-            </nav>
+    
+    <div class="container-game">
+        <div class="game">
+            <h1 class="title">Tebak Graffiti</h1>
+            <img id="tag" src="asset/resk12 - Copy.png" alt="tebak gambar">
+            <input type="text" id="jawaban" placeholder="Jawaban kamu...">
+            <button onclick="cekJawaban()">Cek Jawaban!</button>
+            <p id="feedback"></p>
         </div>
-        <div class="games">
-            <div class="option" onclick="pickOption('1')">1</div>
-            <div class="option" onclick="pickOption('2')">2</div>
-            <div class="option" onclick="pickOption('3')">3</div>
-            <div class="option" onclick="pickOption('4')">4</div>
-        </div>
+        
+        <nav class="nav-game">
+            <a href="home.html" id="home">HOME</a>
+            <a onclick= "darkMode()" id="mode">MODE</a>
+            <a onclick="rerender()" id="restrat">RESTRAT</a>
+        </nav>
     </div>
+
+    <script src="index.js"></script>
 </body>
 </html>
